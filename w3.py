@@ -22,7 +22,7 @@ def wether():
     country = input("Введите код вашей страны: ")  # Переменная для записи страны/кода страны
     country_and_place = place + ", " + country  # Запись города и страны в одну переменную через запятую
 
-    owm = OWM('f8965cae8094d79b43ab2b10b5deb61b')  # Ваш ключ с сайта open weather map
+    owm = OWM('')  # Ваш ключ с сайта open weather map
     mgr = owm.weather_manager()  # Инициализация owm.weather_manager()
     observation = mgr.weather_at_place(country_and_place)
     # Инициализация mgr.weather_at_place() И передача в качестве параметра туда страну и город
